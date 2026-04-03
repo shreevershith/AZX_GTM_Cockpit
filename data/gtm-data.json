@@ -1,0 +1,140 @@
+{
+  "asOf": "2026-04-02",
+  "disclaimer": "This cockpit uses public sources and illustrative UI-only metrics. It is not connected to a live CRM and does not reflect AZX’s internal pipeline.",
+  "companyBlurb": {
+    "name": "AZX",
+    "mission": "Accelerate positive impact in critical industries through AI transformation.",
+    "sourceUrl": "https://www.azx.io/careers",
+    "hq": "3120 139th Ave SE, Suite 500, Bellevue, WA 98005"
+  },
+  "pipeline": {
+    "illustrative": true,
+    "stages": [
+      { "id": "new", "label": "New", "count": 12 },
+      { "id": "qualified", "label": "Qualified", "count": 7 },
+      { "id": "meeting", "label": "Meeting set", "count": 4 },
+      { "id": "proposal", "label": "Proposal", "count": 2 }
+    ],
+    "alerts": [
+      {
+        "severity": "medium",
+        "text": "Two opportunities in “Meeting set” have had no activity in 14+ days (illustrative example)."
+      }
+    ]
+  },
+  "signals": [
+    {
+      "type": "investor_content",
+      "title": "Why we invested in AZX: Embedding AI into critical industries at scale",
+      "date": "2026-02-17",
+      "source": "KOMPAS VC",
+      "sourceUrl": "https://www.kompas.vc/news/why-we-invested-in-azx"
+    },
+    {
+      "type": "investor_content",
+      "title": "Inside AZX: Why AI in critical industries only works when it’s embedded in reality",
+      "date": "2026-02-20",
+      "source": "KOMPAS VC",
+      "sourceUrl": "https://www.kompas.vc/news/inside-azx"
+    },
+    {
+      "type": "company",
+      "title": "AZX — Careers (culture, benefits, mission, named customer examples)",
+      "date": "2026-04-02",
+      "source": "azx.io",
+      "sourceUrl": "https://www.azx.io/careers"
+    },
+    {
+      "type": "company",
+      "title": "AZX portfolio company profile (Seattle, pre-seed, critical infrastructure)",
+      "date": "2026-04-02",
+      "source": "KOMPAS VC",
+      "sourceUrl": "https://www.kompas.vc/portfolio/azx"
+    },
+    {
+      "type": "oss",
+      "title": "AZX-PBC-OSS/hpxml-rs — Rust-native HPXML parser, validator, and serializer",
+      "date": "2026-04-02",
+      "source": "GitHub",
+      "sourceUrl": "https://github.com/AZX-PBC-OSS/hpxml-rs"
+    },
+    {
+      "type": "company",
+      "title": "AZX — LinkedIn company page",
+      "date": "2026-04-02",
+      "source": "LinkedIn",
+      "sourceUrl": "https://www.linkedin.com/company/azxpbc/"
+    },
+    {
+      "type": "company",
+      "title": "AZX — Trust Center (Vanta)",
+      "date": "2026-04-02",
+      "source": "Vanta",
+      "sourceUrl": "https://app.vanta.com/azx.io/trust/e2fcnrfde4whr0tj9ijg4"
+    },
+    {
+      "type": "hiring",
+      "title": "AZX on Built In Seattle (roles, culture snapshot)",
+      "date": "2026-04-02",
+      "source": "Built In",
+      "sourceUrl": "https://builtin.com/company/azx"
+    }
+  ],
+  "strategicFocus": [
+    {
+      "account": "CBRE",
+      "sector": "Real estate",
+      "note": "Named as a category-leader example on azx.io/careers.",
+      "sourceUrl": "https://www.azx.io/careers",
+      "tierDemo": "A"
+    },
+    {
+      "account": "Franklin Energy",
+      "sector": "Energy",
+      "note": "Named on azx.io/careers.",
+      "sourceUrl": "https://www.azx.io/careers",
+      "tierDemo": "A"
+    },
+    {
+      "account": "Flexe",
+      "sector": "Logistics",
+      "note": "Named on azx.io/careers.",
+      "sourceUrl": "https://www.azx.io/careers",
+      "tierDemo": "B"
+    },
+    {
+      "account": "Puget Sound Energy",
+      "sector": "Power utility",
+      "note": "Named on azx.io/careers (among utilities).",
+      "sourceUrl": "https://www.azx.io/careers",
+      "tierDemo": "B"
+    }
+  ],
+  "contentQueue": [
+    {
+      "title": "Thread: hpxml-rs and residential building-energy data (NREL / DOE / ENERGY STAR context)",
+      "channel": "GitHub / technical social",
+      "status": "draft",
+      "relatedUrl": "https://github.com/AZX-PBC-OSS/hpxml-rs"
+    },
+    {
+      "title": "Summarize “embedded AI” thesis for exec audience (KOMPAS Inside AZX piece)",
+      "channel": "LinkedIn",
+      "status": "draft",
+      "relatedUrl": "https://www.kompas.vc/news/inside-azx"
+    },
+    {
+      "title": "Careers spotlight: GTM AI Engineer — AI-native ops, CRM, campaign intelligence",
+      "channel": "Careers / Ashby",
+      "status": "queued",
+      "relatedUrl": "https://www.azx.io/careers"
+    },
+    {
+      "title": "Trust & security: link Trust Center in outbound and event follow-ups",
+      "channel": "Sales enablement",
+      "status": "idea",
+      "relatedUrl": "https://app.vanta.com/azx.io/trust/e2fcnrfde4whr0tj9ijg4"
+    }
+  ],
+  "applicationNotesForApplicant": "Goal: a one-screen GTM cockpit that mixes sourced public signals (each row links out) with an illustrative funnel and demo-only ABM tiers—so it reads as product thinking, not fake insider data. Stack: static HTML/CSS/JS + JSON; host on GitHub Pages or Netlify. AI use: optional for polish; facts were checked against azx.io, KOMPAS VC, and GitHub. Next: wire HubSpot/Salesforce + RSS/news ingestion for live signals."
+}

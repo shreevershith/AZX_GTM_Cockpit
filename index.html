@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AZX — GTM cockpit (demo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="eyebrow">Static demo · not live CRM data</p>
+        <h1>GTM cockpit</h1>
+        <p class="lede">
+          One glance at <strong>sourced signals</strong>, an <strong>illustrative funnel</strong>, public
+          ecosystem focus, and a <strong>content queue</strong>—the shape of an AI-native revops view for a
+          small team.
+        </p>
+        <p class="meta">
+          <span id="asOf">As of —</span>
+          <span class="dot">·</span>
+          <span>Bellevue HQ per <a href="https://www.azx.io/careers">azx.io/careers</a></span>
+        </p>
+      </div>
+    </header>
+
+    <main class="grid" id="app">
+      <p class="loading" id="loading">Loading cockpit data…</p>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footerDisclaimer"></p>
+      <p class="fine-print">
+        Suggested blurb for your application (editable in <code>data/gtm-data.json</code>):
+        <span id="applicantNote"></span>
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

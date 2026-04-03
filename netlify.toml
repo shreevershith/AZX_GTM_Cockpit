@@ -1,0 +1,3 @@
+# Netlify (Git-connected deploy): publish from repo root. Drag-and-drop ignores this file.
+[build]
+  publish = "."
