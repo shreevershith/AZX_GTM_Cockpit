@@ -1,6 +1,6 @@
 # AZX GTM Cockpit
 
-A **static, single-page “GTM cockpit”** built as a **vibe-coded application** for the **AZX GTM AI Engineer** role. It demonstrates how a small go-to-market team could combine **sourced public signals**, an **illustrative pipeline view**, **public ecosystem context**, and a **content queue**—without a live CRM—using plain HTML, CSS, JavaScript, and one JSON file.
+A **static, single-page “GTM cockpit”** built as a **vibe-coded application** for the **AZX GTM AI Engineer** role. It demonstrates how a small go-to-market team could combine **sourced public signals**, an **illustrative pipeline view**, **public ecosystem context**, and a **content queue** without a live CRM, using plain HTML, CSS, JavaScript, and one JSON file.
 
 **Problem this project answers (application prompt):**  
 *Create a vibe coded experience that conveys why you're a great fit for this role; send a link and share notes about how you approached it.*
@@ -29,7 +29,7 @@ A **static, single-page “GTM cockpit”** built as a **vibe-coded application*
 
 ## Overview
 
-**AZX GTM Cockpit** is a browser-only dashboard that loads **public, verifiable** information from [`data/gtm-data.json`](data/gtm-data.json): links to **azx.io**, **KOMPAS VC**, **GitHub** (e.g. `hpxml-rs`), **LinkedIn**, **Built In**, and the **Vanta Trust Center**. **Pipeline counts** and **ABM “tier” labels** are **explicitly illustrative** (demo UI only)—they are not real pipeline or internal ABM scores.
+**AZX GTM Cockpit** is a browser-only dashboard that loads **public, verifiable** information from [`data/gtm-data.json`](data/gtm-data.json): links to **azx.io**, **KOMPAS VC**, **GitHub** (e.g. `hpxml-rs`), **LinkedIn**, **Built In**, and the **Vanta Trust Center**. **Pipeline counts** and **ABM “tier” labels** are **explicitly illustrative** (demo UI only); they are not real pipeline or internal ABM scores.
 
 | Panel | Role |
 | ----- | ---- |
@@ -46,7 +46,7 @@ A **static, single-page “GTM cockpit”** built as a **vibe-coded application*
 - **Illustrative vs. truthy:** Badges call out **illustrative** funnel numbers and **demo** tiers so nothing reads like leaked CRM data.
 - **Signal filters:** Chips filter by type (`investor_content`, `company`, `oss`, `hiring`).
 - **Responsive layout:** Two-column grid on wide screens; stacks on small screens.
-- **Zero build step:** Open standards only—no bundler required for the app itself.
+- **Zero build step:** Open standards only; no bundler required for the app itself.
 - **Deploy-ready:** GitHub Actions workflow for **GitHub Pages**, plus notes for **Netlify** and **Vercel**.
 - **Application copy in JSON:** `applicationNotesForApplicant` holds a short blurb you can paste or shorten for the “how you approached it” field.
 
@@ -89,10 +89,10 @@ azx-gtm-cockpit/
 
 ### Prerequisites
 
-- **Node.js 18+** (optional but recommended for `npx serve`) — [Download Node.js](https://nodejs.org/)
-- **Python 3.10+** (optional alternative for `python -m http.server`) — [Download Python](https://www.python.org/downloads/)
+- **Node.js 18+** (optional but recommended for `npx serve`) - [Download Node.js](https://nodejs.org/)
+- **Python 3.10+** (optional alternative for `python -m http.server`) - [Download Python](https://www.python.org/downloads/)
 - A **modern browser** (Chrome, Edge, Firefox, Safari)
-- **Git** (for deploy to GitHub) — [Download Git](https://git-scm.com/downloads)
+- **Git** (for deploy to GitHub) - [Download Git](https://git-scm.com/downloads)
 
 ### Step 1: Clone or copy the repository
 
@@ -107,13 +107,13 @@ cd azx-gtm-cockpit
 
 **Important:** Do **not** open `index.html` directly from disk (`file://`). The app uses `fetch("data/gtm-data.json")`, which browsers block on `file://` for this pattern.
 
-**Option A — `serve` (Node):**
+**Option A - `serve` (Node):**
 
 ```bash
 npx --yes serve .
 ```
 
-**Option B — Python:**
+**Option B - Python:**
 
 ```bash
 python -m http.server 8080
@@ -199,7 +199,7 @@ Company messaging, investor pages, and third-party URLs change. Before you submi
 | **External links** | `target="_blank"` + `rel="noopener noreferrer"` on outbound URLs. |
 | **Error state** | If JSON fails to load, a red **error box** explains the usual cause (`file://` or wrong server root). |
 
-There is **no** REST API, WebSocket, or SSE—everything is static.
+There is **no** REST API, WebSocket, or SSE; everything is static.
 
 ---
 
@@ -230,7 +230,7 @@ Show **GTM-oriented thinking** (pipeline, signals, ecosystem, content ops) in a 
 
 ## Deploy to Production
 
-### Option A — GitHub Pages (recommended)
+### Option A - GitHub Pages (recommended)
 
 1. Push this repository to GitHub (`main` branch).
 2. **Settings → Pages → Build and deployment → Source:** **GitHub Actions** (workflow: [`.github/workflows/pages.yml`](.github/workflows/pages.yml)).
@@ -238,12 +238,12 @@ Show **GTM-oriented thinking** (pipeline, signals, ecosystem, content ops) in a 
 
 **Alternative:** Deploy from branch **main** / folder **`/` (root)** without Actions.
 
-### Option B — Netlify
+### Option B - Netlify
 
 - Drag-and-drop the folder at [Netlify Drop](https://app.netlify.com/drop), **or** connect the repo.  
 - Publish directory: **`.`** ([`netlify.toml`](netlify.toml)).
 
-### Option C — Vercel
+### Option C - Vercel
 
 - Import the repo; framework **Other**; no build command; output **`.`** ([`vercel.json`](vercel.json)).
 
@@ -289,10 +289,10 @@ Show **GTM-oriented thinking** (pipeline, signals, ecosystem, content ops) in a 
 ## Credits
 
 - **Public sources** cited in [`data/gtm-data.json`](data/gtm-data.json) (AZX, KOMPAS VC, GitHub, etc.) belong to their respective owners.
-- **Fonts:** [Google Fonts](https://fonts.google.com/) — Fraunces, Manrope.
+- **Fonts:** [Google Fonts](https://fonts.google.com/): Fraunces, Manrope.
 
 ---
 
 ## License
 
-MIT License — use this demo project freely for your job search and portfolio. Third-party trademarks and linked content remain property of their owners.
+MIT License - use this demo project freely for your job search and portfolio. Third-party trademarks and linked content remain property of their owners.
